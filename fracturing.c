@@ -32,12 +32,12 @@ double calculateDistance() {
     double y2; 
 
     // Asks user to enter coordinates of the first point
-    printf("Enter the coordinates of Point #1 (x1 y1): ");
-    scanf("%lf %lf", &x1, &y1);
+    printf("Enter the x coordinates of the points (x1 x2): ");
+    scanf("%lf %lf", &x1, &x2);
 
     // Asks user to enter coordinates of the second point
-    printf("Enter the coordinates of Point #2 (x2 y2): ");
-    scanf("%lf %lf", &x2, &y2);
+    printf("Enter the y coordinates of the points (y1 y2): ");
+    scanf("%lf %lf", &y1, &y2);
 
     // Outputs the entered points
     printf("Point #1 entered: x1 = %.2lf; y1 = %.2lf\n", x1, y1);
@@ -156,12 +156,23 @@ double calculateHeight() {
     return difficulty;
 }   // calculateHeight
 
+//********************************************************
+// int main(int argc, char **argv)
+//
+// Purpose:             Calls the other functions in the program
+// Input:           None
+// Output:          None
+// Precondition:        
+// Postcondition:  
+//********************************************************
+
 int main(int argc, char **argv) {
-    // Call the function and store the result
+   
     double distance = calculateDistance();
     double perimeter = calculatePerimeter();
     double area = calculateArea();
     double width = calculateWidth();
     double height = calculateHeight();
+
     return 0;
 } //main
