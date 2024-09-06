@@ -70,8 +70,11 @@ double calculatePerimeter() {
     // Outputs the calculated perimeter
     printf("The perimeter of the city encompassed by your request is %.2lf\n", perimeter);
 
-    // Returns my percieved difficulty level of making this function on a scale of 1 to 5 with 1 being easy and 5 being hard. 
-    return 2.0;
+    // Rating my percieved difficulty level of making this function on a scale of 1 to 5 with 1 being easy and 5 being hard. 
+    double difficulty = 2.0;  
+
+    // Returns the difficulty
+    return difficulty;
 }   // calculatePerimeter
 
 //********************************************************
@@ -90,11 +93,11 @@ double calculateArea() {
 
     double area = PI*(pow((distance/2), 2));
 
-    // Outputs the calculated area
-    printf("The area of the city encompassed by your request is %.2lf\n", area);
+    // Rating my percieved difficulty level of making this function on a scale of 1 to 5 with 1 being easy and 5 being hard. 
+    double difficulty = 1.0; 
 
-    // Returns my percieved difficulty level of making this function on a scale of 1 to 5 with 1 being easy and 5 being hard. 
-    return 3.0;
+    // Returns the difficulty
+    return difficulty;
 }   //calculateArea
 
 //********************************************************
@@ -116,8 +119,11 @@ double calculateWidth() {
     // Outputs the calculated width
     printf("The width of the city encompassed by your request is %.2lf\n", width);
 
-    // Returns my percieved difficulty level of making this function on a scale of 1 to 5 with 1 being easy and 5 being hard. 
-    return 1.0;
+    // Rating my percieved difficulty level of making this function on a scale of 1 to 5 with 1 being easy and 5 being hard. 
+    double difficulty = 1.0; 
+
+    // Returns the difficulty
+    return difficulty;
 }   // calculateWidth
 
 //********************************************************
@@ -138,8 +144,11 @@ double calculateHeight() {
 
     printf("The height of the city encompassed by your request is %.2lf\n", height);
 
-    // Returns my percieved difficulty level of making this function on a scale of 1 to 5 with 1 being easy and 5 being hard. 
-    return 1.0;
+    // Rating my percieved difficulty level of making this function on a scale of 1 to 5 with 1 being easy and 5 being hard. 
+    double difficulty = 1.0; 
+
+    // Returns the difficulty
+    return difficulty;
 }   // calculateHeight
 
 //********************************************************
