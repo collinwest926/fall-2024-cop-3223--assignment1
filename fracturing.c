@@ -26,16 +26,14 @@
 //********************************************************
 
 double calculateDistance() {
-    double x1; 
-    double y1; 
-    double x2; 
-    double y2; 
 
-    // Asks user to enter coordinates of the first point
+    double x1, x2, y1, y2; 
+
+    // Asks user to enter x coordinates of the points
     printf("Enter the x coordinates of the points (x1 x2): ");
     scanf("%lf %lf", &x1, &x2);
 
-    // Asks user to enter coordinates of the second point
+    // Asks user to enter y coordinates of the points
     printf("Enter the y coordinates of the points (y1 y2): ");
     scanf("%lf %lf", &y1, &y2);
 
@@ -72,11 +70,8 @@ double calculatePerimeter() {
     // Outputs the calculated perimeter
     printf("The perimeter of the city encompassed by your request is %.2lf\n", perimeter);
 
-    // Rating my percieved difficulty level of making this function on a scale of 1 to 5 with 1 being easy and 5 being hard. 
-    double difficulty = 2.0;  
-
-    // Returns the difficulty
-    return difficulty;
+    // Returns my percieved difficulty level of making this function on a scale of 1 to 5 with 1 being easy and 5 being hard. 
+    return 2.0;
 }   // calculatePerimeter
 
 //********************************************************
@@ -98,11 +93,8 @@ double calculateArea() {
     // Outputs the calculated area
     printf("The area of the city encompassed by your request is %.2lf\n", area);
 
-    // Rating my percieved difficulty level of making this function on a scale of 1 to 5 with 1 being easy and 5 being hard. 
-    double difficulty = 1.0; 
-
-    // Returns the difficulty
-    return difficulty;
+    // Returns my percieved difficulty level of making this function on a scale of 1 to 5 with 1 being easy and 5 being hard. 
+    return 3.0;
 }   //calculateArea
 
 //********************************************************
@@ -124,11 +116,8 @@ double calculateWidth() {
     // Outputs the calculated width
     printf("The width of the city encompassed by your request is %.2lf\n", width);
 
-    // Rating my percieved difficulty level of making this function on a scale of 1 to 5 with 1 being easy and 5 being hard. 
-    double difficulty = 1.0; 
-
-    // Returns the difficulty
-    return difficulty;
+    // Returns my percieved difficulty level of making this function on a scale of 1 to 5 with 1 being easy and 5 being hard. 
+    return 1.0;
 }   // calculateWidth
 
 //********************************************************
@@ -149,11 +138,8 @@ double calculateHeight() {
 
     printf("The height of the city encompassed by your request is %.2lf\n", height);
 
-    // Rating my percieved difficulty level of making this function on a scale of 1 to 5 with 1 being easy and 5 being hard. 
-    double difficulty = 1.0; 
-
-    // Returns the difficulty
-    return difficulty;
+    // Returns my percieved difficulty level of making this function on a scale of 1 to 5 with 1 being easy and 5 being hard. 
+    return 1.0;
 }   // calculateHeight
 
 //********************************************************
