@@ -1,6 +1,7 @@
 //********************************************************
 // fracturing.c
 // Author: Collin West
+// UCF ID: 5041579
 // Date: 9/2/24
 // Class: COP 3223, Professor Parra
 // Purpose: To write a program that will house many internal
@@ -163,11 +164,11 @@ double calculateHeight() {
 
 int main(int argc, char **argv) {
    
-    double distance = calculateDistance();
-    double perimeter = calculatePerimeter();
-    double area = calculateArea();
-    double width = calculateWidth();
-    double height = calculateHeight();
+   calculateDistance();
+    calculatePerimeter();
+    calculateArea();
+    calculateWidth();
+    calculateHeight();
 
     return 0;
 } //main
