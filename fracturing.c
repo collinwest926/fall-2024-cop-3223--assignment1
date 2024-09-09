@@ -2,7 +2,7 @@
 // fracturing.c
 // Author: Collin West
 // UCF ID: 5041579
-// Date: 9/2/24
+// Date: 9/8/24
 // Class: COP 3223, Professor Parra
 // Purpose: To write a program that will house many internal
 // functions instead of typing evrything in main(). This will
@@ -22,8 +22,8 @@
 // Purpose:             Calculates the distance between two points
 // Input:           Two sets of x and y coordiantes
 // Output:          Prints the x1, y1, x2, and y2 entered by the user and the distance between the two points.
-// Precondition:        
-// Postcondition:  
+// Precondition:        Assumes the points entered are numeric
+// Postcondition:       The distance has been calculated and the return is a double representing the distance.
 //********************************************************
 
 double calculateDistance() {
@@ -58,8 +58,8 @@ double calculateDistance() {
 // Purpose:             Calculates the perimeter of the city using the calculateDistance for the points
 // Input:           Two sets of x and y coordiantes
 // Output:          Prints the x1, y1, x2, and y2 entered by the user, the distance between the two points, and the calculated perimeter.
-// Precondition:        
-// Postcondition:  
+// Precondition:        Assumes the points entered are numeric and the CalculateDistance function works properly.
+// Postcondition:       The perimeter has been calculated and the return is a double representing the difficulty.
 //********************************************************
 
 double calculatePerimeter() {
@@ -84,8 +84,8 @@ double calculatePerimeter() {
 // Purpose:             Calculates the Area of the city using the calculateDistance for the points
 // Input:           Two sets of x and y coordiantes
 // Output:          Prints the x1, y1, x2, and y2 entered by the user, the distance between the two points, and the calculated Area.
-// Precondition:        
-// Postcondition:  
+// Precondition:        Assumes the points entered are numeric and the CalculateDistance function works properly.
+// Postcondition:       The area has been calculated and the return is a double representing the difficulty.
 //********************************************************
 
 double calculateArea() {
@@ -98,7 +98,7 @@ double calculateArea() {
     printf("The area of the city encompassed by your request is %.2lf\n", area);
 
     // Rating my percieved difficulty level of making this function on a scale of 1 to 5 with 1 being easy and 5 being hard. 
-    double difficulty = 1.0; 
+    double difficulty = 3.0; 
 
     // Returns the difficulty
     return difficulty;
@@ -110,8 +110,8 @@ double calculateArea() {
 // Purpose:             Calculates the width of the city using the calculateDistance for the points
 // Input:           Two sets of x and y coordiantes
 // Output:          Prints the x1, y1, x2, and y2 entered by the user, the distance between the two points, and the calculated width.
-// Precondition:        
-// Postcondition:  
+// Precondition:        Assumes the points entered are numeric and the CalculateDistance function works properly.
+// Postcondition:       The width has been calculated and the return is a double representing the difficulty.
 //********************************************************
 
 double calculateWidth() {
@@ -136,13 +136,17 @@ double calculateWidth() {
 // Purpose:             Calculates the height of the city using the calculateDistance for the points
 // Input:           Two sets of x and y coordiantes
 // Output:          Prints the x1, y1, x2, and y2 entered by the user, the distance between the two points, and the calculated height.
-// Precondition:        
-// Postcondition:  
+// Precondition:        Assumes the points entered are numeric and the CalculateDistance function works properly.
+// Postcondition:       The height has been calculated and the return is a double representing the difficulty.
 //********************************************************
 
 double calculateHeight() {
     
     double distance = calculateDistance();
+
+    // I'm assuming this is referring to the maximum height of the buildings in the city. 
+    // Maybe the height is always supposed to just equal 0, but I'm
+    // going with my gut here based on my interpretation of the instructions. 
 
     double height = distance;
 
@@ -158,11 +162,11 @@ double calculateHeight() {
 //********************************************************
 // int main(int argc, char **argv)
 //
-// Purpose:             Calls the other functions in the program
+// Purpose:         Calls the other functions in the program
 // Input:           None
 // Output:          None
-// Precondition:        
-// Postcondition:  
+// Precondition:        None
+// Postcondition:       None
 //********************************************************
 
 int main(int argc, char **argv) {
