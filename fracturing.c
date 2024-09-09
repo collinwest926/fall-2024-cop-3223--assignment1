@@ -94,6 +94,9 @@ double calculateArea() {
 
     double area = PI*(pow((distance/2), 2));
 
+    // Outputs the calculated area
+    printf("The area of the city encompassed by your request is %.2lf\n", area);
+
     // Rating my percieved difficulty level of making this function on a scale of 1 to 5 with 1 being easy and 5 being hard. 
     double difficulty = 1.0; 
 
@@ -164,7 +167,7 @@ double calculateHeight() {
 
 int main(int argc, char **argv) {
    
-   calculateDistance();
+    calculateDistance();
     calculatePerimeter();
     calculateArea();
     calculateWidth();
